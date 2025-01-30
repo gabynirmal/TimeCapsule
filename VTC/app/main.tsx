@@ -1,21 +1,51 @@
-import { Text, View, StyleSheet} from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity, Image } from "react-native";
+import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function HomeScreen() {
     return (
-        <View style={styles.container}>
-            <Text style = {styles.text}>FUCKKK YEAHHH BITCH UR SO GOOD AT WHAT YOU DO</Text>
-        </View>
+        <SafeAreaProvider>
+          <SafeAreaView style={styles.container}>
+            
+            <View style={styles.container}>
+                <Text style = {styles.text}>Search</Text>
+            </View>
+
+            <View>
+              <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText}>New Project</Text>
+                <Image 
+                source={require("../assets/images/newProject.png")}
+                style={styles.newPImage}/>
+              </TouchableOpacity>
+            </View>
+
+          </SafeAreaView>
+        </SafeAreaProvider>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: "#5c111e",
-      justifyContent: "center",
-      alignItems: "center",
+      padding: 10,
     },
     text: {
-      color: "#9fe890",
+      fontWeight: "bold"
+    },
+    button: {
+      backgroundColor: "#6d37ed",
+      padding: 10,
+      marginVertical: 10,
+      borderRadius: 8,
+      alignItems: "center",
+    },
+    newPImage: {
+      width: 200,
+      height: 200,
+    },
+    buttonText: {
+      color: "#fff",
+      fontWeight: "bold",
+      fontSize: 16,
     },
   });
