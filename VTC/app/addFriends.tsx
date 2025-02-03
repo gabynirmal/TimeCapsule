@@ -45,7 +45,7 @@ export default function HomeScreen() {
             <TouchableOpacity style={styles.navButton} onPress={() => router.push("/friends")}>
                 <Text style={styles.navText}>Friends</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.navButton} onPress={() => router.push("/profile")}>
+            <TouchableOpacity style={styles.navButton} onPress={() => router.push("/main")}>
                 <Text style={styles.navText}>Profile</Text>
             </TouchableOpacity>
         </View>

@@ -19,8 +19,6 @@ export default function HomeScreen() {
                 <Text style={styles.text}>Friends will be displayed here</Text>
             </View>
 
-            
-
             <View style={styles.buttonContainer}>
               <TouchableOpacity style={styles.button} onPress={() => router.push("/addFriends")}>
                 <Text style={styles.buttonText}>Add Friends</Text>
@@ -29,13 +27,13 @@ export default function HomeScreen() {
 
           </SafeAreaView>
           <View style={styles.bottomBar}>
-            <TouchableOpacity style={styles.navButton} onPress={() => router.push("/home")}>
+            <TouchableOpacity style={styles.navButton} onPress={() => router.push("/main")}>
                 <Text style={styles.navText}>Home</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.navButton} onPress={() => router.push("/friends")}>
                 <Text style={styles.navText}>Friends</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.navButton} onPress={() => router.push("/profile")}>
+            <TouchableOpacity style={styles.navButton} onPress={() => router.push("/main")}>
                 <Text style={styles.navText}>Profile</Text>
             </TouchableOpacity>
         </View>
