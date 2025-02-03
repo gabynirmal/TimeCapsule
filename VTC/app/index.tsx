@@ -8,7 +8,7 @@ export default function HomeScreen() {
         <SafeAreaView style={styles.container}>
 
           <View style={styles.titleContainer}>
-            <Text style={styles.title}>APP NAME</Text>
+            <Text style={styles.title}>eat my ass</Text>
           </View>
 
           <View style={styles.textContainer}>
